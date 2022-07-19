@@ -1,0 +1,342 @@
+/*** CSS Resetting***/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**body {
+    position: relative;
+}**/
+
+#navbar {
+    background-color: #333;
+    width: 100%;
+    /**position: fixed;**/
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#navbar ul .navlink {
+    list-style: none;
+    padding: 20px;
+}
+
+#navbar ul .navlink .inline_nav {
+    color: #F0F0F0;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+/**#intro {
+    background-image: url('/assets/img/2789fa4c794797d95fae85903989f4d6.jpg');
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}**/
+
+/**#intro #img_section #images {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    transition: all linear 0.7s;
+}**/
+
+#intro #image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/**#intro:hover #img_section #images {
+    opacity: 0;
+}
+
+#intro:hover #img_section #image {
+    opacity: 1;
+}**/
+
+#intro {
+    position: relative;
+    text-align: center;
+}
+
+/**#intro #img_section {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}**/
+
+#saying {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #333;
+    transition: color ease-out 0.2s;
+    cursor: pointer;
+}
+
+#intro #img_section:hover #saying h1 {
+    color: #fff;
+}
+
+#saying h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#saying p {
+    font-size: 30px;
+    font-style: italic;
+}
+
+#about {
+    max-width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    margin: 45px 10px;
+    box-sizing: border-box;
+}
+
+#about #image1 {
+    width: 450px;
+    height: auto;
+    margin: 40px;
+    padding: 25px;
+    box-shadow: 10px 10px 8px rgb(22, 76, 201);
+    border-radius: 10%;
+    background-color: #fff;
+    transition: transform, background-color 0.1s ease-out;
+    box-sizing: border-box;
+}
+
+#about #image1:hover {
+    transform: rotate(10deg);
+    background-color: bisque;
+}
+
+#about article h3 {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+    padding: 5px;
+    border-bottom: 4px solid blue;
+    color: #333;
+}
+
+#about article ul {
+    padding: 25px;
+}
+
+#about article ul > li {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+#about #quote {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;
+    font-size: 23px;
+    text-align: center;
+    border: 4px solid sandybrown;
+    color: #fff;
+    background-color: #fff;
+    transition: color 0.3s ease-out;
+}
+
+#about #quote:hover {
+    color: white;
+    background-color: rgb(190, 109, 39);
+}
+
+#projects {
+    padding: 70px 20px;
+    text-align: center;
+    margin: 15px 0;
+    background-color:rgb(23, 102, 107);
+}
+
+#projects h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    font-size: 35px;
+    margin-bottom: 100px;
+    margin-right: 58px;
+    margin-left: 58px;
+    border-bottom: 3px solid rgb(22, 76, 201);
+    color: #F0F0F0;
+}
+
+#projects #grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 57.6px;
+}
+
+#projects #grid .attribute {
+    padding: 25px;
+    margin: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(63, 38, 148);
+    border-radius: 20px;
+    box-shadow: 8px 5px 4px 0 rgb(23, 102, 107);
+    transition: color ease-out 0.2s;
+}
+
+#projects #grid .attribute:hover {
+    box-shadow: 8px 5px 4px 0 rgb(245, 241, 28);
+}
+
+#projects #grid .attribute .link .img {
+    width: 100%;
+    height: auto;
+    display: block;
+    height: calc(100% - 6.8rem);
+    margin: 0;
+    padding: 0;
+
+}
+
+#projects #grid .attribute .link {
+    text-decoration: none;
+}
+
+#projects #grid .attribute .link .name {
+    text-decoration-style: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F0F0F0;
+    padding: 15px 0;
+    background-color: rgb(63, 38, 148);
+    transition: background-color ease-out 0.2s;
+    cursor: pointer;
+}
+
+#projects #grid .attribute:hover .link .name {
+    background-color:rgb(245, 241, 28);
+}
+
+#contact {
+    width: 100%;
+    height: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact #in4 {
+    font-size: 50px;
+    line-height: 1.4px;
+    text-align: center;
+    padding: 60px 50px;
+    font-family:'Times New Roman', Times, serif;
+    border-bottom:rgb(39, 185, 190) solid 3px;
+    font-style: italic;
+}
+
+#contact #information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact #information > .mysites {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+    text-decoration: none;
+}
+
+#contact #information > .mysites h1 {
+    line-height: 1.4;
+    font-size: 45px;
+    border-radius: 25%;
+}
+
+#contact #information > .mysites h3 {
+    line-height: 1.4;
+    font-size: 25px;
+}
+
+#contact #information .mysites #blue {
+    background-color: rgb(15, 82, 207);
+    color: #F0F0F0;
+}
+
+#contact #information .mysites #purple {
+    background: linear-gradient(rgb(156, 38, 160), rgb(66, 27, 172));
+    color: #F0F0F0;
+}
+
+#contact #information .mysites #bluee {
+    background-color:rgb(62, 153, 238);
+    color: #F0F0F0;
+}
+
+#contact #information .mysites #color1 {
+    color: rgb(15, 82, 207);
+}
+
+#contact #information .mysites #color2 {
+    color: rgb(156, 38, 160);
+}
+
+#contact #information .mysites #color3 {
+    color: rgb(62, 153, 238);
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color ease-in-out 0.3s;
+}
+
+#footer:hover {
+    background: linear-gradient(rgb(2, 255, 179), rgb(157, 255, 0));
+}
+
+
+#footer p {
+    color: #F0F0F0;
+    font-size: 35px;
+}
+
