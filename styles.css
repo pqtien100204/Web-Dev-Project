@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#home {
+    width: 100%;
+    height: 700px;
+    background-image: url("./images/499ffd95e9bff72f6cb7bae13ab4b7e5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    margin-bottom: 60px;
+}
+
+#home ul li{
+    color: white;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+#panel {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background: linear-gradient(#647DEE, #7F53AC);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Sono', sans-serif;
+    color: #fff;
+    font-weight: 20px;
+    font-size: 30px;
+}
+
+#panel #title {
+    /* position: absolute; */
+    /* left: 20px; */
+    font-weight: 30px;
+    font-size: 50px;
+    color:#fff;
+    font-family: 'Pacifico', cursive !important;
+}
+
+/* 
+#panel #sects { 
+    height: 70px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 300px;
+    height: 60px;
+    font-family: 'Sono', sans-serif;
+} */
+
+#panel .sections:hover{
+    color: rgba(37, 17, 218, 0.651);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#intro {
+    position: relative;
+    top: 230px;
+    left: 100px;
+    font-family: 'Pacifico', cursive;
+}
+
+#intro ul li {
+    color: #fff;
+    font-size: 35px;
+}
+
+#intro #sentence .effect{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .75s step-end infinite;
+  }
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+#about {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 60px 0px; */
+    margin: 60px 0px;
+}
+
+#about .field h3 {
+    font-family: 'Pacifico', cursive;
+    color: blueviolet;
+    font-size: 30px;
+}
+
+#about .field img{
+    max-width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+#about .field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100%/3);
+    height: 400px;
+    margin: 50px 25px;
+    border-radius: 30px;
+}
+
+#about .field:nth-child(1), #about .field:nth-child(3) {
+    box-shadow: 2px 5px 15px blueviolet;
+}
+
+#about .field .description {
+    font-size: 25px;
+    font-weight: 15px;
+    line-height: 1.5;
+}
+
+#projects {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(#B58ECC, #5DE6DE);
+    margin-top: 60px;
+}
+
+.introduction {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    color: blueviolet;
+    padding: 40px 15px 10px 15px;
+    border-bottom: 3px rgb(43, 19, 70) solid;
+    text-align: center;
+
+}
+
+#contact h1 {
+    border: 0;
+    padding-bottom: 0;
+    font-size: 60px;
+}
+#contact h2 {
+    padding: 10px 15px 10px 15px;
+    line-height: 20px;
+    font-size: 35px;
+}
+#contact ul {
+    padding: 20px 10px 0;
+}
+#contact ul .sub-accom {
+    list-style-type: none;
+    padding: 15px 35px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact #accom {
+    display: flex;
+    flex-direction: row;
+    font-size: 29px;
+    justify-content: center;
+    align-items: center;
+}
+#contact {
+    margin-bottom: 40px;
+}
+
+#closing #bar{
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(45deg, rgb(111, 140, 235) 10%, rgb(90, 212, 202) 30%, rgb(204, 227, 247) 50%, rgb(104, 223, 213) 80%, rgb(77, 125, 216) 100%); 
+    /* background-color: red; */
+}
